@@ -1,0 +1,42 @@
+<!--
+determines the value of a variable called x. If the value of x is higher than 10,
+lower than 0, or not a number, we are going to throw an error. The error is then caught by the
+catch argument and the proper error message is displayed:
+-->
+<html>
+<body>
+<script type="text/javascript">
+var x=prompt("Enter a number between 0 and 10:","");
+try
+{
+if(x>10)
+{
+throw "Err1";
+}
+else if(x<0)
+{
+throw "Err2";
+}
+else if(isNaN(x))
+{
+throw "Err3";
+}
+}
+catch(er)
+{
+if(er=="Err1")
+{
+alert("Error! The value is too high");
+}
+if(er=="Err2")
+{
+alert("Error! The value is too low");
+}
+if(er=="Err3")
+{
+alert("Error! The value is not a number");
+}
+}
+</script>
+</body>
+</html>
