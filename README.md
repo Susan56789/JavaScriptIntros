@@ -1,0 +1,3 @@
+# JavaScriptIntros
+My practical work as I learn javaScript 
+Nothing complex yet... 
